@@ -1,4 +1,4 @@
-baseURL: "https://datwins.github.io/owl_wisdom"
+baseURL: "https://datwins.github.io/owl_wisdom/"
 languageCode: "en-us"
 title: The Watcher
 theme: PaperMod
@@ -11,7 +11,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-relativeURLS: true
+relativeURLs: false
 
 outputs:
   home:
