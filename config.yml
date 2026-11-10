@@ -19,8 +19,9 @@ outputs:
     - RSS
     - JSON
 
-paginate: 10
-paginatePath: blog
+pagination:
+  pagerSize: 10
+  path: blog
 
 minify:
   disableXML: true
