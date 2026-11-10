@@ -1,0 +1,75 @@
+baseURL: "https://comfy-cheesecake-ff2694.netlify.app/"
+languageCode: "en-us"
+title: The Watcher
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+googleAnalytics: UA-63248109-4
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+relativeURLS: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+paginate: 10
+paginatePath: blog
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "Learning Chess from Watching Youtube"
+  author: The Watcher
+  # author: ["Me", "You"] # multiple authors
+  ShowPostNavLinks: true
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowShareButtons: true
+  ShowReadingTime:
+    true
+    # disableSpecial1stPost: true
+  displayFullLangName: true
+  comments: true
+  images: ["profile.webp"]
+
+  profileMode:
+    enabled: true
+    title: "Monkey See, Monkey Do" # optional default will be site title
+    subtitle: "Collection of favorite youtube chess links "
+    imageUrl: "profile.webp" # optional
+    imageTitle: "The Watcher" # optional
+    imageWidth: 240 # custom size
+    imageHeight: 240 # custom size
+
+    buttons:
+      - { name: Blog, url: "/posts" }
+      - { name: About, url: "/about" }
+      
+  taxonomies:
+  category: categories
+  tag: tags
+
+menu:
+  main:
+    - identifier: blog
+      name: blog
+      url: /posts
+      weight: 7
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
